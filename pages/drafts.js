@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Link from "next/link";
-import { getDatabase } from "./notion";
+import { getDatabase } from "../lib/notion";
 import { Text } from "./drafts/[id].js";
 import styles from "./index.module.css";
 import Footer from "../components/Footer";
