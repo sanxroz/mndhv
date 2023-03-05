@@ -204,15 +204,15 @@ const renderBlock = (block) => {
 };
 
 export default function Post({ page, blocks }) {
+  if (!page || !blocks) {
+    return <div />;
+  }
+
   const date = new Date(page.last_edited_time).toLocaleString("en-US", {
     month: "short",
     day: "2-digit",
     year: "numeric",
   });
-
-  if (!page || !blocks) {
-    return <div />;
-  }
   return (
     <div>
       <Head>
