@@ -1,9 +1,11 @@
 import { Fragment } from "react";
 import Head from "next/head";
-import { getDatabase, getPage, getBlocks } from "../lib/notion";
+import { getDatabase, getPage, getBlocks } from "../notion";
 import Link from "next/link";
-import { databaseId } from "./index.js";
-import styles from "./post.module.css";
+import { databaseId } from "../drafts.js";
+import styles from "../post.module.css";
+import Navbar from "../../components/Navbar";
+import Footer from "../../components/Footer";
 
 export const Text = ({ text }) => {
   if (!text) {
@@ -202,6 +204,12 @@ const renderBlock = (block) => {
 };
 
 export default function Post({ page, blocks }) {
+  const date = new Date(page.last_edited_time).toLocaleString("en-US", {
+    month: "short",
+    day: "2-digit",
+    year: "numeric",
+  });
+
   if (!page || !blocks) {
     return <div />;
   }
@@ -211,20 +219,19 @@ export default function Post({ page, blocks }) {
         <title>{page.properties.Name.title[0].plain_text}</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
+      <Navbar />
       <article className={styles.container}>
         <h1 className={styles.name}>
           <Text text={page.properties.Name.title} />
         </h1>
+        <p className={styles.postDescription}>{date}</p>
         <section>
           {blocks.map((block) => (
             <Fragment key={block.id}>{renderBlock(block)}</Fragment>
           ))}
-          <Link href="/" className={styles.back}>
-            ← Go home
-          </Link>
         </section>
       </article>
+      <Footer />
     </div>
   );
 }
