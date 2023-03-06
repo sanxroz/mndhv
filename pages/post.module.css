@@ -55,8 +55,7 @@
 
 .pre {
   background-color: rgb(242, 242, 242);
-  padding: 2px 4px;
-  margin: 20px 0;
+  margin-top: 20px;
   line-height: 2.3;
   border-radius: 12px;
   overflow: auto;
@@ -127,6 +126,8 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   padding: 24px;
   border-radius: 10px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   background-color: rgba(255, 255, 255, 0.05);
   color: rgba(255, 255, 255, 0.92);
 }
