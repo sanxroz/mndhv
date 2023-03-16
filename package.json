@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.3",
+    "@vercel/analytics": "^0.1.11",
     "bootstrap": "^5.2.3",
     "next": "13.1.6",
     "nextjs-components": "^2.5.1",
