@@ -24,6 +24,11 @@
 .description-drafts {
   text-align: center;
   font-size: 18px;
+  max-width: 700px;
+}
+
+.index_container__Xi8tY {
+  max-width: none !important;
 }
 
 .header p {
@@ -57,10 +62,6 @@
   padding-bottom: 50px;
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.post {
-  margin-bottom: 50px;
 }
 
 .postTitle {

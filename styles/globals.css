@@ -62,6 +62,10 @@ body {
   font-family: Onest, sans-serif;
 }
 
+span {
+  font-family: Onest, sans-serif;
+}
+
 body {
   background-color: #0a0a0a;
   font-family: Onest, sans-serif;
@@ -76,12 +80,33 @@ body {
   font-weight: 900;
 }
 
+.body-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .framer-tesu0h p {
   font-family: Onest, sans-serif;
   font-weight: 700;
   font-size: 17px;
   color: rgba(255, 255, 255, 0.92);
   margin-bottom: 0px;
+}
+
+.index_container__Xi8tY {
+  max-width: 70rem !important;
+}
+
+.description-drafts {
+  text-align: center;
+  font-size: 18px;
+  max-width: 700px;
 }
 
 .description-drafts {
@@ -92,6 +117,7 @@ body {
 
 @media (prefers-color-scheme: dark) {
   body {
+    font-family: Onest, sans-serif;
     background-color: #0a0a0a;
     color: hsla(0, 0%, 100%, 0.92);
   }
@@ -116,6 +142,7 @@ h1 {
 
 body {
   -ms-overflow-style: none;
+  font-family: Onest, sans-serif;
   overflow: -moz-scrollbars-none;
 }
 
@@ -177,7 +204,7 @@ li {
   text-decoration: underline !important;
 }
 
-/* Generated on: Sun Mar 05 2023 19:56:27 GMT+0000 (Coordinated Universal Time) */
+/* Generated on: Thu Mar 16 2023 23:18:57 GMT+0000 (Coordinated Universal Time) */
 /* ==========================================================================
    normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css 
    ========================================================================== */
@@ -188,6 +215,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 body {
+  font-family: Onest, sans-serif;
   margin: 0;
 }
 article,
@@ -357,6 +385,13 @@ td,
 th {
   padding: 0;
 }
+.div-flex-labs {
+  list-style: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
 
 /* ==========================================================================
    Start of base Webflow CSS - If you're looking for some ultra-clean CSS, skip the boilerplate and see the unminified code below.
@@ -407,11 +442,7 @@ th {
 html {
   height: 100%;
 }
-body {
-  background-color: #0a0a0a;
-  font-family: Onest, sans-serif;
-  color: hsla(0, 0%, 100%, 0.92);
-}
+
 img {
   max-width: 100%;
   vertical-align: middle;
@@ -568,10 +599,9 @@ h1 {
   margin-top: 20px;
 }
 h2 {
-  font-size: 30px !important;
-  line-height: 1.4em !important;
-  margin-top: 40px !important;
-  margin-bottom: 0px !important;
+  font-size: 32px;
+  line-height: 36px;
+  margin-top: 20px;
 }
 h3 {
   font-size: 24px;
@@ -962,6 +992,15 @@ textarea.w-select {
   .w-container {
     max-width: 728px;
   }
+
+  .text-header-drafts {
+    font-size: 120px !important;
+    line-height: 1.2em !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 900;
+  }
+
   .w-hidden-main {
     display: inherit !important;
   }
@@ -1071,6 +1110,15 @@ textarea.w-select {
   .w-container {
     max-width: none;
   }
+
+  .text-header-drafts {
+    font-size: 80px !important;
+    line-height: 1.2em !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+    font-weight: 900;
+  }
+
   .w-hidden-main {
     display: inherit !important;
   }
@@ -2362,7 +2410,6 @@ textarea.w-select {
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  gap: 10px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -3713,21 +3760,54 @@ textarea.w-select {
   font-weight: 700;
 }
 
+.div-world {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.image {
+  width: 50%;
+  opacity: 0.73;
+}
+
+.div-flex-labs {
+  display: -ms-grid;
+  display: grid;
+  width: 80%;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 40px;
+  grid-row-gap: 40px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+
+.body-div {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 @media screen and (max-width: 991px) {
   .body {
     background-color: #0a0a0a;
-  }
-
-  .text-header-drafts {
-    font-size: 120px !important;
-    line-height: 1.2em !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    font-weight: 900;
-  }
-
-  .description-drafts {
-    text-align: center;
   }
 
   .rl_menu-icon2_line-bottom {
@@ -4084,6 +4164,11 @@ textarea.w-select {
   .heading-cta {
     font-size: 40px;
   }
+
+  .div-flex-labs {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -4098,23 +4183,6 @@ textarea.w-select {
 
   .rl_navbar2_component {
     min-height: 4rem;
-  }
-
-  .text-header-drafts {
-    font-size: 120px !important;
-    line-height: 1.2em !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    font-weight: 900;
-  }
-
-  p {
-    margin-bottom: 0px !important;
-    margin-top: 20px !important;
-  }
-
-  .description-drafts {
-    text-align: center;
   }
 
   .image-header {
@@ -4205,6 +4273,11 @@ textarea.w-select {
     padding-top: 32px;
     padding-bottom: 32px;
   }
+
+  .div-flex-labs {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -4223,18 +4296,6 @@ textarea.w-select {
   .div-block {
     padding: 24px 30px 32px;
     grid-row-gap: 16px;
-  }
-
-  .text-header-drafts {
-    font-size: 80px !important;
-    line-height: 1.2em !important;
-    margin-top: 0px !important;
-    margin-bottom: 0px !important;
-    font-weight: 900;
-  }
-
-  .description-drafts {
-    text-align: center;
   }
 
   .header-text {
@@ -4547,6 +4608,61 @@ textarea.w-select {
 #w-node-_21053a16-0def-d40f-4bc6-d4fe6d0df5f6-6d0df5eb {
   -ms-grid-column-align: end;
   justify-self: end;
+}
+
+#w-node-_905eef1f-1a5c-0937-3803-b070ec0ca737-0e78d1b8 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_0d679d12-04cb-ee59-a621-75b4922d4bb7-0e78d1b8 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-e9121254-6ca2-d94c-f13e-fdc30ff75fa4-0e78d1b8 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_525d32fe-b38c-b5b7-5c4e-9b8663b3a4ff-0e78d1b8 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
+}
+
+#w-node-_867e1abf-e00f-9b21-b0b7-7f66242e1320-0e78d1b8 {
+  -ms-grid-column: span 1;
+  grid-column-start: span 1;
+  -ms-grid-column-span: 1;
+  grid-column-end: span 1;
+  -ms-grid-row: span 1;
+  grid-row-start: span 1;
+  -ms-grid-row-span: 1;
+  grid-row-end: span 1;
 }
 
 @media screen and (max-width: 991px) {
