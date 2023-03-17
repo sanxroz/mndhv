@@ -276,12 +276,6 @@ small {
   font-size: 80%;
 }
 
-section{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
 p{
 width: 100% !important;
 }
