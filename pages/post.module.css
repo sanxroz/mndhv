@@ -45,7 +45,7 @@
 }
 
 .code {
-  background: hsla(0,0%,100%,.15);
+  background: hsla(0,0%,100%,.15) !important;
   color: #fff;
   font-family: "JetBrainsMono",monospace;
   padding: 0.25em;
