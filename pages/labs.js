@@ -33,59 +33,39 @@ export default function Home({ posts }) {
               className="framer-zo7c36 framer-1u69nbu"
               href="./labs#labs"
               data-projection-id={33}
-            >
-              <div
-                className="framer-tesu0h"
-                data-framer-component-type="RichTextContainer"
-                data-projection-id={34}
-                style={{
-                  placeContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "#d5494c",
-                  borderRadius: "32px",
-                  display: "flex",
-                  flex: "0 0 auto",
-                  flexFlow: "row nowrap",
-                  gap: "10px",
-                  height: "min-content",
-                  overflow: "hidden",
-                  padding: "20px 28px",
-                  position: "relative",
-                  textDecoration: "none",
-                  willChange: "transform",
-                  Color: "rgba(255, 255, 255, 0.92)",
-                }}
-              >
-                <p>Start exploring now</p>
-              </div>
-            </a>
+            ></a>
           </div>
         </header>
+        <div className="body-div">
+          <ol className="div-flex-labs" id="labs">
+            {posts.map((post) => {
+              const date = new Date(post.last_edited_time).toLocaleString(
+                "en-US",
+                {
+                  month: "short",
+                  day: "2-digit",
+                  year: "numeric",
+                }
+              );
+              return (
+                <li
+                  href={`/labs/${post.id}`}
+                  key={post.id}
+                  className={styles.post}
+                >
+                  <h3 className={styles.postTitle}>
+                    <Link href={`/labs/${post.id}`}>
+                      <Text text={post.properties.Name.title} />
+                    </Link>
+                  </h3>
 
-        <ol className={styles.posts} id="labs">
-          {posts.map((post) => {
-            const date = new Date(post.last_edited_time).toLocaleString(
-              "en-US",
-              {
-                month: "short",
-                day: "2-digit",
-                year: "numeric",
-              }
-            );
-            return (
-              <li key={post.id} className={styles.post}>
-                <h3 className={styles.postTitle}>
-                  <Link href={`/labs/${post.id}`}>
-                    <Text text={post.properties.Name.title} />
-                  </Link>
-                </h3>
-
-                <p className={styles.postDescription}>{date}</p>
-                <Link href={`/labs/${post.id}`}>Read post →</Link>
-              </li>
-            );
-          })}
-        </ol>
+                  <p className={styles.postDescription}>{date}</p>
+                  <Link href={`/labs/${post.id}`}>Read post →</Link>
+                </li>
+              );
+            })}
+          </ol>
+        </div>
       </main>
       <Footer />
     </div>
