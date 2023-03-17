@@ -45,8 +45,13 @@
 }
 
 .code {
-  font-family: monospace;
-  border-radius: 2px;
+  background: hsla(0,0%,100%,.15);
+  color: #fff;
+  font-family: "JetBrainsMono",monospace;
+  padding: 0.25em;
+  border-radius: 0.25em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 .italic {

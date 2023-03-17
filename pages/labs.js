@@ -12,7 +12,7 @@ export default function Home({ posts }) {
   return (
     <div>
       <Head>
-        <title>Drafts</title>
+        <title>Labs</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
@@ -60,7 +60,7 @@ export default function Home({ posts }) {
                   </h3>
 
                   <p className={styles.postDescription}>{date}</p>
-                  <Link href={`/labs/${post.id}`}>Read post →</Link>
+                  <Link href={`/labs/${post.id}`}>Read Lab →</Link>
                 </li>
               );
             })}
