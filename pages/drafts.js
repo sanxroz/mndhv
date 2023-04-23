@@ -21,7 +21,7 @@ export default function Home({ posts }) {
         <header className={styles.header}>
           <div className="div-text-hero">
             <div className="div-block-2">
-              <h3 className="heading-3">LEARN. BUILD. SHIP.</h3>
+              <h3 className="heading-3">learn. build. ship.</h3>
             </div>
             <h1 className="text-header-drafts">Drafts</h1>
             <p className="description-drafts">

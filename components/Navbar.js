@@ -21,18 +21,15 @@ const Navbar = () => {
               alt=""
               className="rl_navbar2_logo"
             />
-            <h1 className="heading">MindHive</h1>
+            <h1 className="heading">mndHv</h1>
           </a>
           <nav
             role="navigation"
             id="w-node-_21053a16-0def-d40f-4bc6-d4fe6d0df5f1-6d0df5eb"
             className="rl_navbar2_menu is-page-height-tablet w-nav-menu"
           >
-            <a href="/labs" className="rl_navbar2_link w-nav-link">
-              Labs
-            </a>
             <a href="/drafts" className="rl_navbar2_link w-nav-link">
-              Drafts
+              drafts
             </a>
           </nav>
           <div
