@@ -24,45 +24,10 @@ export default function Home({ posts }) {
               <h3 className="heading-3">learn. build. ship.</h3>
             </div>
             <h1 className="text-header-drafts">Drafts</h1>
-            <p className="description-drafts">
-              Tips, tricks and learnings to take your journey to new heights.
-              See how far you can go with 10min readings.
-            </p>
-
-            <a
-              className="framer-zo7c36 framer-1u69nbu"
-              href="./drafts#blogs"
-              data-projection-id={33}
-            >
-              <div
-                className="framer-tesu0h"
-                data-framer-component-type="RichTextContainer"
-                data-projection-id={34}
-                style={{
-                  placeContent: "center",
-                  alignItems: "center",
-                  backgroundColor: "#d5494c",
-                  borderRadius: "32px",
-                  display: "flex",
-                  flex: "0 0 auto",
-                  flexFlow: "row nowrap",
-                  gap: "10px",
-                  height: "min-content",
-                  overflow: "hidden",
-                  padding: "20px 28px",
-                  position: "relative",
-                  textDecoration: "none",
-                  willChange: "transform",
-                  Color: "rgba(255, 255, 255, 0.92)",
-                }}
-              >
-                <p>Start exploring now</p>
-              </div>
-            </a>
           </div>
         </header>
 
-        <ol className={styles.posts} id="blogs">
+        <ol className="div-flex-labs" id="blogs">
           {posts.map((post) => {
             const date = new Date(post.last_edited_time).toLocaleString(
               "en-US",

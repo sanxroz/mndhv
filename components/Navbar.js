@@ -21,7 +21,7 @@ const Navbar = () => {
               alt=""
               className="rl_navbar2_logo"
             />
-            <h1 className="heading">mndHv</h1>
+            <h1 className="heading">humind</h1>
           </a>
           <nav
             role="navigation"
