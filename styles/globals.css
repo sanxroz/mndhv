@@ -151,7 +151,7 @@ body::-webkit-scrollbar {
 }
 
 code {
-  background-color: #1F1F1F !important;
+  background-color: #1f1f1f !important;
   font-family: "JetBrainsMono", monospace !important;
   padding: 0.75rem 1rem !important;
   border-radius: 0.5rem !important;
@@ -276,8 +276,8 @@ small {
   font-size: 80%;
 }
 
-p{
-width: 100% !important;
+p {
+  width: 100% !important;
 }
 
 sub,
@@ -3788,7 +3788,7 @@ textarea.w-select {
 .div-flex-labs {
   display: -ms-grid;
   display: grid;
-  width: 80%;
+  width: 100%;
   grid-auto-columns: 1fr;
   grid-column-gap: 40px;
   grid-row-gap: 40px;
